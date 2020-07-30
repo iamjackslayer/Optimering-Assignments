@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!-- saved from url=(0123)https://blackboard.au.dk/webapps/assignment/uploadAssignment?content_id=_2537688_1&course_id=_133808_1&group_id=&mode=view# -->
+<html lang="en-GB" class="ally-learn-version-3700-0-9 ally-learn-version-3700-0-x ally-learn-version-3700-x-x"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./handin1_files/e99ceaa32b"></script>
+  <title>Review Submission History: First compulsory assignment –...</title>
+<div id="inlineGrader" class="inlineGrader ">
+  
+  <!-- Previewer - Left Panel -->
+  <div id="previewer" class="previewer clearfix"> 
+
+                <!-- Display the instruction and Alignment -->
+
+      <!-- Toggle Button -->
+      <div class="contentDetailsHeader">
+       <h2 id="anonymous_element_11"> <a role="tab" class="expanded" href="https://blackboard.au.dk/webapps/assignment/uploadAssignment?content_id=_2537688_1&amp;course_id=_133808_1&amp;group_id=&amp;mode=view#" onclick="inlineGrading.gradingUtil.toggleOnEvent( event, $(&#39;contentDetails&#39;), false, &#39;a&#39; );" title="Assignment Instructions Click to view/hide content" aria-expanded="true">
+          <span>Assignment Instructions</span>
+        </a></h2>
+      </div>
+
+
+     <!--  Tab Panel -->
+    <div class="collapseTabs" id="contentDetails" style="">
+    
+    <!-- Tabs -->
+               <!--  Content  -->
+         <div class="collapseTabsData" id="contentAreaBlock0">
+                         <div id="instructionId" style="height:auto; overflow:visible;">
+               
+ 
+ 
+  <div class="vtbegenerated">   
+   <div class="vtbegenerated"> 
+    <h1>The Diet Problem</h1> 
+    <p><strong>Hand in no later than Tuesday, February 11th.</strong></p> 
+    <p>In this assignment we will solve a real-life version of the diet problem, inspired by the efforts of Las Olsen that made the Danish media in summer of 2014: <a target="_blank" href="http://nyhederne.tv2.dk/samfund/2014-08-17-%C3%B8konom-du-kan-leve-sundt-under-20-kroner-om-dagen">http://nyhederne.tv2.dk/samfund/2014-08-17-økonom-du-kan-leve-sundt-under-20-kroner-om-dagen</a>. We think that Las Olsen formulated and solved a linear program similar to the diet problem example of the first lecture, but that he did not include your favorite food items in his model (unless you are a big brussel sprout fan). He clearly also left out some obvious constraints (e.g., to eat 500 g of oats one also need to add some milk to the menu).</p> 
+    <p><strong>LP Formulation</strong></p> 
+    <p>See if you can do better by formulating a linear programming model with some of your favorite food items included. Your model should be based on nutritional data taken, e.g., from <a target="_blank" href="http://frida.fooddata.dk/index.php?lang=en">http://frida.fooddata.dk</a> and prices taken, e.g., from <a target="_blank" href="http://www.nemlig.com/">http://www.nemlig.com</a> or based on your personal shopping experiences. Your model should specify a daily diet minimizing total price and satisfying (at least) the following constraints:</p> 
+    <ul> 
+     <li>The total energy content should be <strong>at least</strong> 10.000 kJ.</li> 
+     <li>Macro nutrients should be constrained as recommended in the <a href="http://altomkost.dk/fileadmin/user_upload/altomkost.dk/Slet_ikke_filliste/Raad_og_anbefalinger/Nordic_Nutrition_Recommendations_2012.pdf" target="_blank">Nordic Nutrion Recommendation (NNR 2012)</a>. This means that <strong>between</strong> 25% and 40% of the total energy should come from fat, <strong>between</strong> 45% and 60% of the total energy should come from carbohydrates, and <strong>between</strong> 10% and 20% of the total energy should come from protein. We use that 1g of fat contains 38 kJ of energy and that 1g of either carbohydrates or protein contains 17 kJ of energy. You can assume that all the energy comes from protein, carbohydrates or fat, unless you add alcohol to the menu. If you do add alcohol, <strong>at most</strong> 5% of the energy should come from alcohol.</li> 
+     <li>You are willing to eat according to the solution for <strong>at least</strong> a week.</li> 
+    </ul> 
+    <p><strong>Solving the problem</strong></p> 
+    <p>You should find an optimal solution to your LP formulation using the Python implementation of the Simplex algorithm <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html" target="_blank">scipy.optimize.linprog</a> given in the <a href="https://scipy.org/scipylib/index.html" target="_blank">SciPy </a>library.</p> 
+    <p>You want to minimize the price, but maybe, when you see the solution, you will realize that you need to add some constraints to make the menu reasonable. Many more constraints can be found in the NNR 2012, for instance concerning added sugar, salt, and vitamins.</p> 
+    <p>If you don't already have the Python language installed, the <a href="https://www.anaconda.com/download/" target="_blank">Anaconda</a> distribution is recommended.</p> 
+    <p>See <a href="https://blackboard.au.dk/bbcswebdav/pid-2537688-dt-content-rid-6186262_1/xid-6186262_1" target="_blank"><span style="font-family: courier\ new, courier;">LP-example1.py</span></a> for code that solves the LP example of the first lecture.</p> 
+    <p><strong>What to hand in</strong></p> 
+    <p>Hand in the following:</p> 
+    <ol> 
+     <li>A description of your model. Describe the meaning of variables and constraints.</li> 
+     <li>A short explanation of how you arrived at your model (including the process of possibly adding additional constraints).</li> 
+     <li>An optimal solution found using <span style="font-family: courier\ new, courier;">scipy.optimize.linprog</span>.</li> 
+    </ol> 
+    <p><strong>Note</strong></p> 
+    <ul> 
+     <li>You may discuss the assignments with other students, but:</li> 
+     <li>You must hand in your <strong>own <em>individual</em> solutions</strong>.</li> 
+    </ul> 
+    <p><br></p> 
+    <p><br></p> 
+   </div>  
+  </div>
+ 
+
+             </div>
+                               </div>
+         
+      </div>
+
+
+  
+  <!-- GradingPanel - Right Panel -->
+    <div id="gradingPanel" class="gradingPanel  clearfix" role="tablist">
+  <div class="gradingPanelHeader">
+  <h2 id="anonymous_element_12"><a role="tab" class="detailsHeader" href="https://blackboard.au.dk/webapps/assignment/uploadAssignment?content_id=_2537688_1&amp;course_id=_133808_1&amp;group_id=&amp;mode=view#" onclick="inlineGrading.gradingUtil.gradingPaneltoggleOnEvent( event, $(&#39;assignmentInfo&#39;), false, &#39;a&#39; );" title="Assignment Details Click to view/hide content" aria-expanded="false">
+    <span>Assignment Details</span>
+  </a></h2>
+</div>
+
+<div role="tabpanel" class="attempt gradingPanelSection" id="assignmentInfo" style="height:auto; overflow:visible; ">
+  <h3 id="anonymous_element_13">Name</h3>
+<p>First compulsory assignment</p>
+
+
+</div>
+<div id="aggregateGradeContainer" class="gradeHeader">
+
+  <form id="aggregateGradeForm" name="aggregateGradeForm">    
+  <h3 id="anonymous_element_14">
+    <label for="aggregateGrade">
+      <span class="mainLabel" aria-hidden="true" role="presentation">
+              Mark
+            </span>
+    
+      <span class="subHeader" aria-hidden="true" role="presentation">Last Marked Attempt</span>    </label>
+    
+      </h3>       
+  
+      
+  <div id="aggregateGradeContent" class="grade readOnly">
+    
+            <input id="aggregateGrade" type="text" value="1.00" maxlength="11" readonly="" class="gradeEntry " title="Mark" aria-describedby="aggregateGrade_pointsPossible" aria-label="Mark scored using last marked attempt">
+
+        
+                                                   
+          <span class="pointsPossible" id="aggregateGrade_pointsPossible">/1</span>
+            
+  </div>
+  </form>
+  
+  
+  
+</div>
+
+ 
+<div id="currentAttempt">  
+
+
+    <div class="attemptHeader" id="currentAttempt_header">
+    
+             <div class="attemptHeaderLabel attemptListBtn"> 
+      <h3 id="currentAttempt_label">
+        <label for="currentAttempt_grade">
+             <span class="mainLabel">Attempt 2  </span>
+                                <span class="subHeader  dateStamp ">
+                        13/02/20 11:41
+                                              </span>
+                  </label>
+      </h3>
+    </div>
+    
+                 <div class="grade readOnly">
+    <!-- the following line needs a trailing space or it causes the input to overlap the attempt drop down -->     
+      <input id="currentAttempt_grade" name="grade" class="gradeEntry" type="text" value="1.00" maxlength="11" title="Attempt Mark" readonly="" aria-describedby="currentAttempt_pointsPossible"> 
+                         <span class="pointsPossible" id="currentAttempt_pointsPossible">/1</span> 
+      
+      
+      
+    </div>
+    
+        <a id="currentAttempt_attemptListButton" class="attemptListDropDown" href="https://blackboard.au.dk/webapps/assignment/uploadAssignment?content_id=_2537688_1&amp;course_id=_133808_1&amp;group_id=&amp;mode=view#" onclick="inlineGrading.gradingUtil.toggleOnEvent( event, $( &#39;currentAttempt_attemptList&#39; ), false, &#39;a&#39; );" role="button" aria-expanded="false" title="Click to show/hide all attempts">
+      Click to show/hide all attempts
+    </a>
+    <div id="currentAttempt_attemptList" class="attemptsList" style="display: none;" role="menu">
+      <ul>
+                <li>     
+          <a href="https://blackboard.au.dk/webapps/assignment/uploadAssignment?course_id=_133808_1&amp;content_id=_2537688_1&amp;mode=DEFAULT&amp;currentAttemptIndex=1&amp;attempt_id=_1309690_1" class="clearfix attemptInfo" role="button">
+            <span class="attemptNumber" id="attempt__1309690_1_label">
+                              <span class="mainLabel">Attempt 1</span>
+                            <span class="subHeader dateStamp">09/02/20 11:10</span>
+            </span>
+            <span class="pointsGraded" id="attempt__1309690_1_points" aria-labelledby="attempt__1309690_1_label">
+                            0.00
+                          </span>
+          </a> 
+        </li>
+                <li class="current">     
+          <a href="https://blackboard.au.dk/webapps/assignment/uploadAssignment?course_id=_133808_1&amp;content_id=_2537688_1&amp;mode=DEFAULT&amp;currentAttemptIndex=2&amp;attempt_id=_1315841_1" class="clearfix attemptInfo" role="button">
+            <span class="attemptNumber" id="attempt__1315841_1_label">
+                              <span class="mainLabel">Attempt 2</span>
+                            <span class="subHeader dateStamp">13/02/20 11:41</span>
+            </span>
+            <span class="pointsGraded" id="attempt__1315841_1_points" aria-labelledby="attempt__1315841_1_label">
+                            1.00
+                          </span>
+          </a> 
+        </li>
+              </ul>
+    </div>
+    
+
+        
+  </div>
+    
+  
+    <div id="currentAttempt_content" class="attemptContent" style="height: auto; overflow: visible;">    
+
+            
+         
+        <div id="currentAttempt_gradeDataPanel" class="gradeSubmissionPanel" style="display:  none ">
+    <!-- Following div added to fix the animation issue -->
+    <div>
+      
+       
+      
+		        
+      
+                    
+              
+            
+    </div>
+    </div> 
+    
+            
+        <div id="currentAttempt_submission" class="segment">
+ 
+      <h4 id="anonymous_element_15">Submission</h4>
+ 
+      <ul id="currentAttempt_submissionList" class="filesList">
+                <li>
+          <a id="currentAttempt_attemptFile_2127451_1" class="attachment genericFile selected" href="https://blackboard.au.dk/webapps/assignment/uploadAssignment?content_id=_2537688_1&amp;course_id=_133808_1&amp;group_id=&amp;mode=view#" onclick="gradeAssignment.inlineView( event, &#39;_2127451_1&#39;, &#39;_1315841_1&#39; );">
+            Jack Optimizations (indi) Revised Assignment 1.pdf
+          </a>
+                    <div class="downloadFile">
+                        <a class="dwnldBtn" href="https://blackboard.au.dk/webapps/assignment/download?course_id=_133808_1&amp;attempt_id=_1315841_1&amp;file_id=_2127451_1&amp;fileName=Jack%20Optimizations%20%28indi%29%20Revised%20Assignment%201.pdf" role="button"></a>
+                      </div>
+                  </li>
+              </ul>
+  
+    </div>
+      
+      
+    
+    <div id="currentAttempt_comments" class="segment">
+  <h4 id="anonymous_element_16">
+        Comments
+      </h4>
+  <div class="feedbackWrapper">
+
+  
+  <div id="currentAttempt_studentComments" class="comment">
+  
+          
+
+
+  <span class="userInfo"> 
+
+        
+              <img alt="" src="./handin1_files/_289060_1(1)">
+          
+  
+              Zhing Jieh Jack Wong
+      
+  </span>
+
+      
+          <span class="dateStamp">13/02/20 11:41</span>
+        
+    <div class="vtbegenerated">Thank you for the previous feedback!&nbsp;It made me think more rigorously about my problem formulation and as a result I gained a better understanding of modeling&nbsp;LP problem.&nbsp;</div>
+   
+  </div>
+  
+  <div id="currentAttempt_feedback" class="comment">
+  
+          <span class="userInfo">Feedback to Learner</span>
+      
+          <span class="dateStamp">14/02/20 10:57</span>
+        
+    
+ 
+ 
+  <div class="vtbegenerated">
+   Great handin. I wouldn't mind eating that much salmon. :D Accepted
+  </div>
+ 
+
+   
+  </div>
+      
+</div>
+
+</div>
+  
+
+  </div>
+    
+   
+
+</div><div id="bottomSubmitPlaceHolder" style="height: 77px;"></div><div class="taskbuttondiv_wrapper submitStepFixed" style="margin-bottom: auto; width: 381px;">
+<p class="taskbuttondiv" id="bottom_submitButtonRow">
+			<input class="button-2" type="button" name="bottom_OK" role="button" value="OK" onclick="document.location=&#39;/webapps/blackboard/content/listContent.jsp?content_id=_2411746_1&amp;course_id=_133808_1&#39;;">
+			<input id="bottom_saveAsArtifactButton" class="button-2" type="button" name="bottom_saveAsArtifactButton" role="button" value="Save As Artefact" onclick="javascript:Portfolio.saveAsArtifact(&#39;bb.assignmentArtifactProvider&#39;,&#39;%7B%22content_id%22%3A%22_2537688_1%22%2C%22column_id%22%3A%22_585556_1%22%2C%22attempt_id%22%3A%22_1315841_1%22%2C%22group%22%3A%22false%22%7D&#39;, &#39;_133808_1&#39;, &#39;_289060_1&#39;);">
+		<input class="submit button-1" name="bottom_Start New" type="submit" role="button" value="Start New" onclick="document.location=&#39;/webapps/assignment/uploadAssignment?action=newAttempt&amp;course_id=_133808_1&amp;content_id=_2537688_1&#39;;">
+
+</p>
+</div>
+
+</div>
+
+
+</div>
+
+   </div>
+   
+     </div>
+   </div> 
+   </div>
+   </div>  
+</div></div>
+<script type="text/javascript">var resizeIframeListener = window.addEventListener('message', function(e) {
+    try {
+        var postMessageData = e.data;
+        if (postMessageData.messageType === "kms-transcript" && postMessageData.entryId !== undefined) {
+            var items = Array.from(document.querySelectorAll(".liItem"));
+            if (items.length === 0) {                items = Array.from(document.querySelectorAll("#announcementList li"));
+            }            items.forEach(function(item) {
+                var iframe = item.getElementsByTagName("iframe")[0];
+                if (iframe !== undefined && iframe.getAttribute("src").indexOf(postMessageData.entryId) >= 0) {
+                    iframe.style.height = "800px";
+                    iframe.parentElement.style.height = "800px";
+                }
+            });
+        }
+    }
+    catch(ex) {
+        console.error("encountered error in kms communication", ex);
+    }
+});</script><script type="text/javascript"> if (!Array.prototype.includes) {
+    Object.defineProperty(Array.prototype, 'includes', {
+        value: function(searchElement, fromIndex) {
+            var o = Object(this);
+            var len = o.length >>> 0;
+            if (len === 0) {
+                return false;
+            }
+            var n = fromIndex | 0;
+            var k = Math.max(n >= 0 ? n : len - Math.abs(n), 0);
+
+            function sameValueZero(x, y) {
+                return x === y || (typeof x === 'number' && typeof y === 'number' && isNaN(x) && isNaN(y));
+            }
+
+            while (k < len) {
+                if (sameValueZero(o[k], searchElement)) {
+                    return true;
+                }
+                k++;
+            }
+
+            return false;
+        }
+    });
+}
+
+/** this function IS used. see com/kaltura/bb/util/JspTopFrameStartHookHandler.java:48 **/
+var replaceKalturaIframeTokens = function(contentIdsToReplace, courseId) {
+    var contentItems = Array.prototype.slice.call(document.querySelectorAll('[id^="contentListItem"]'));
+    contentItems = contentItems.filter(function(contentItem) {
+        var contentId = contentItem.id.split(':')[1];
+        return contentIdsToReplace.includes(contentId);
+    });
+
+    contentItems.forEach(function(contentItem) {
+        var contentId = contentItem.id.split(':')[1];
+        var innerIframes = Array.prototype.slice.call(contentItem.querySelectorAll('iframe'));
+        var kalturaIframe = innerIframes.filter(function(iframeElement) {
+            return iframeElement.src.indexOf('osv-kaltura') !== -1;
+        });
+
+        if(kalturaIframe.length !== 1) {
+            return;
+        }
+
+        var kalturaIframeElement = kalturaIframe[0],
+            iframeSrc = kalturaIframeElement.src;
+
+        iframeSrc = iframeSrc
+            .replace('course_id=', 'course_id_old=')
+            .replace('course_id%3D', 'course_id_old%3D')
+            .replace('content_id=', 'content_id_old=')
+            .replace('content_id%3D', 'content_id_old%3D');
+        iframeSrc += '&course_id=' + courseId + '&content_id=' + contentId;
+
+        kalturaIframeElement.src = iframeSrc;
+    });
+};
+
+var addCourseIdIfMissing = function (courseId) {
+    var items = Array.from(document.querySelectorAll("a[href*='viewContent1_Iframe']"));
+    items = items.concat(Array.from(document.querySelectorAll("a[href*='LtiMashupPlayIframeWrapper']")));
+    items = items.concat(Array.from(document.querySelectorAll("iframe[src*='LtiMashupPlayIframeWrapper']")));
+    items.forEach(function(videoLink) {
+        var isIframe = (videoLink.tagName === 'IFRAME'); 
+        var videoHref = isIframe ? videoLink.src : videoLink.href;
+        var hrefParts = videoHref.split('&');
+        var wrongCourseId = null;
+        hrefParts.forEach(function(part){
+           part = part.split('=');
+           if (part.length > 1 && part[0] === 'course_id') {
+               if (part[1] !== courseId) { wrongCourseId = part[1]; }           }
+        });
+        if (wrongCourseId !== null) { videoHref.replace(wrongCourseId, courseId) }
+        if (videoHref !== undefined && videoHref.indexOf("course_id=") === -1) {
+            videoHref += "&course_id=" + courseId;
+            if (isIframe) {videoLink.src = videoHref}
+            else {videoLink.href = videoHref;}
+        }
+    });
+};</script><script type="text/javascript">addCourseIdIfMissing('_133808_1')</script><script type="text/javascript">var urlCEvalauation=window.location.protocol + '//' +window.location.host+'/webapps/blackboard/content/contentWrapper.jsp?course_id=_133808_1&displayName=Kursusevaluering';if(window.location.href != null){if((urlCEvalauation !=null || urlCEvalauation!=undefined) && window.location.href.indexOf(urlCEvalauation)>-1){GetCourseSidePanel('Kursusevaluering');}else{if(document.getElementById('dvOuter')) {document.getElementById('dvOuter').style.display="block";}}}function GetCourseSidePanel(toolName){var xhttp = new XMLHttpRequest();xhttp.onreadystatechange = function () {if (xhttp.readyState == 4 && xhttp.status == 200){var data = xhttp.response;if(data != null) {var url = window.location.protocol + '//'+window.location.host+'/webapps/blackboard/content/contentWrapper.jsp?course_id=_133808_1&displayName='+toolName;if(window.location.href != null && window.location.href.indexOf(url) > -1){var iframeBreadCrumb='<iframe id="orientationFrame" marginheight="5"  frameborder="0" scrolling="no" marginwidth="0" name="orientationFrame" title="Orientation Bar" style="width:100%; height:40px" src="' + document.getElementById('orientationFrame').src + '"></iframe>';var iframeCode='<iframe id="contentFrame" frameborder="0" name="content" title="&nbsp;" style="display: block; width: 100%; height: 100%;"  src="' + document.getElementById('contentFrame').src + '" ></iframe>';document.getElementById('globalNavPageContentArea').remove();var mainDiv = '<div id="locationPane" class="locationPane" style="height: 100%">';mainDiv = mainDiv + '<div class="navigationPane" style="height: 100%;" id="navigationPane">'+ data +'</div>';mainDiv = mainDiv + '<div  class="contentPane" style="height: 100%;" id="contentPanel">';mainDiv = mainDiv+  '<div class="shadow" style="height: 100%;"> <div class="editmodeWrapper" style="height: 100%;"> <div id="content" class="contentBox" style="height: 100%;"> ' + iframeCode + '</div></div>';mainDiv = mainDiv + '</div>';mainDiv = mainDiv + '</div>';mainDiv = mainDiv + '</div>';var elemDiv = document.createElement('div');elemDiv.id = 'dvBlueLoginTasks';elemDiv.style.height = '100%';elemDiv.innerHTML = mainDiv;document.body.appendChild(elemDiv);}}}};xhttp.open('GET', window.location.protocol + '//' + window.location.host + '/webapps/blackboard/content/courseMenu.jsp?course_id=_133808_1&newWindow=true', true);xhttp.setRequestHeader('Accept', 'application/json');xhttp.send();}function DisableCourseLink(){var list = document.getElementById('courseMenuPalette_contents').getElementsByTagName('a');if(list!=null || list!=undefined){for(var i=0;i<=list.length-1;i++){if(list[i].getElementsByTagName('span')[0].title.toLowerCase()!='kursusevaluering'){list[i].setAttribute('href','javascript:void(0)');if(document.getElementById('dvOuter')) {document.getElementById('dvOuter').style.display='none';}list[i].onclick =blockCourseNav;}}}}function blockCourseNav(){document.getElementById('dvOuter').style.display='block';}if(window.location.href.toLowerCase().indexOf('bluelti.jsp') != -1) {var dv=document.getElementById('globalNavPageNavArea'); if(dv!=null){dv.style.display='none';}}</script>
+<script type="text/javascript">  (function() {    function async_load(){        var s = document.createElement('script');        s.type = 'text/javascript';        s.async = true;        s.src = '/webapps/ee-Eesypluginv2-BBLEARN/loader2.jsp';        var x = document.getElementsByTagName('script')[0];        x.parentNode.insertBefore(s, x);    }    if (window.attachEvent)        window.attachEvent('onload', async_load);    else        window.addEventListener('load', async_load, false); })(); </script>
+
+
+  <script type="text/javascript">page.bundle.addKey('inlineconfirmation.close','Close');page.bundle.addKey('inlineconfirmation.refresh','Refresh');page.bundle.addKey('hidden.link.close.menu','End of menu. Click to return to associated item.');page.bundle.addKey('hidden.link.close.form','End of form. Click to return to associated item.');page.bundle.addKey('lightbox.loading','Loading...');page.bundle.addKey('yt.stopped','Stopped:');page.bundle.addKey('yt.playing','Playing:');page.bundle.addKey('yt.cued','Cued:');page.bundle.addKey('yt.buffering','Buffering:');page.bundle.addKey('yt.paused','Paused:');page.bundle.addKey('yt.ended','Ended:');page.bundle.addKey('yt.play','Play');page.bundle.addKey('yt.pause','Pause');page.bundle.addKey('yt.mute','Mute');page.bundle.addKey('yt.unmute','Unmute');page.bundle.addKey('lightbox.overlay','{0} has been opened as a lightbox overlaying the current page.');page.bundle.addKey('display.playerControls','Player Controls');page.bundle.addKey('display.videoPlayerControls','Video Player Controls');page.bundle.addKey('display.play','Play');page.bundle.addKey('display.stop','Stop');page.bundle.addKey('display.volumeUp','Volume Up');page.bundle.addKey('display.volumeDown','Volume Down');page.bundle.addKey('display.mute','Mute');page.bundle.addKey('display.videoStatus','Video Status');page.bundle.addKey('display.closePlayerControls','Close Player Controls');page.bundle.addKey('display.embeddedVideoPlayer','Embedded Video Player');page.bundle.addKey('display.of','of');page.bundle.addKey('display.view.on.flickr','View Photo on Flickr');page.bundle.addKey('mashups.content.data.msg','We are unable to display the mashup content. This happens if the system detects an invalid URL. Remove the mashup item and try again to resolve this issue.');page.bundle.addKey('contextmenu.frame.title','Menu frame');page.bundle.addKey('frameset.contentframe.title','Content');page.bundle.addKey('common.pair.paren','{0} ({1})');page.bundle.addKey('attachment.conversion.in.progress','This file is being converted. The estimated wait time is {0} seconds. Please refresh the page after this time has elapsed to view the document or select \"Download\" to download the document to your device.');page.bundle.addKey('collab.grade.rubric.override.invalid.value','Error: A valid numeric value must be entered: Rubric Total Override.');page.bundle.addKey('rubric.grading.inline.loading','Rubric loading.  Please wait...');page.bundle.addKey('rubric.grading.inline.retrieve.error','Failed to request rubric data for marking inline.');page.bundle.addKey('rubric.grading.raw.total','Raw Total: {0} (of {1})');page.bundle.addKey('rubric.grading.override.total.view.only','The rubric total value of {0} has been overridden with a value of {1} out of {2}.');page.bundle.addKey('rubric.grading.change.number.points','Change the number of points out of {0} to:');page.bundle.addKey('rubric.grading.popup.retrieve.error','An error occurred while trying to load the rubric evaluation information. Please close the window and try loading the rubric again.');page.bundle.addKey('rubric.grading.save.error','An error occurred while trying to save the rubric evaluation information.');page.bundle.addKey('rubric.grading.rubric.id.not.specified.error','An error occurred when trying to load the rubric.  The rubric was not specified.');page.bundle.addKey('rubric.grading.list.position','{0} of {1}');page.bundle.addKey('rubric.association.type.non_grading','Used for Secondary Evaluation');page.bundle.addKey('rubric.association.type.grading','Used for Marking');page.bundle.addKey('rubric.grading.confirm.switch.grading.rubric','Use this rubric as the marking rubric?');page.bundle.addKey('rubric.grading.default.evaluatorTemplate','{0}:  {1}');page.bundle.addKey('aggregate_grade.revert.confirm','Revert override mark?');page.bundle.addKey('aggregate_grade.receipt.success','Success: data processed.');page.bundle.addKey('aggregate_grade.receipt.error','Error: unknown error occurred while processing data.');page.bundle.addKey('aggregate_grade.override.title','Override/revert');page.bundle.addKey('aggregate_grade.revert.title','Revert');page.bundle.addKey('aggregate_grade.overridden.title','Manual Override Mark');page.bundle.addKey('aggregate_grade.grade.input.label','Override Mark');page.bundle.addKey('attempt_grading.rubric.button.label','Rubric');page.bundle.addKey('attempt_grading.receipt.success','Success: data processed.');page.bundle.addKey('attempt_grading.receipt.error','Error: unknown error occurred while processing data.');page.bundle.addKey('attempt_grading.forced_draft_save.success','Success: Rubric evaluation was saved as a draft. Please click Submit to save this mark.');page.bundle.addKey('attempt_grading.grade.input.label','Attempt Mark');page.bundle.addKey('attempt_grading.rubric.receipt','Rubric Evaluation Report');page.bundle.addKey('attempt_grading.rubric.submit','Save Rubric');page.bundle.addKey('attempt_grading.grade.clear.confirm','Clear attempt mark?');page.bundle.addKey('portfolio.saveAsArtifact.button.label.save','Save As Artefact');page.bundle.addKey('portfolio.saveAsArtifact.button.label.saving','Saving As Artefact');page.bundle.addKey('portfolio.saveAsArtifact.button.label.saved','Saved As Artefact');page.bundle.addKey('portfolio.saveAsArtifact.error','Failed to save as artefact.');page.bundle.addKey('coursemenu.show','Show Course Menu');page.bundle.addKey('coursemenu.hide','Hide Course Menu');page.bundle.addKey('dynamictree.expand','Expand');page.bundle.addKey('dynamictree.collapse','Collapse');page.bundle.addKey('dynamictree.expand.folder','Expand {0} tree folder');page.bundle.addKey('dynamictree.collapse.folder','Collapse {0} tree folder');page.bundle.addKey('dragdrop.accessible.error.chooseOption','Select an item first.');page.bundle.addKey('dragdrop.accessible.empty','No items available to reposition.');page.bundle.addKey('dragdrop.accessible.complete','Items have been reordered.');page.bundle.addKey('dragdrop.accessible.complete.nochange','No ordering changes made.');page.bundle.addKey('closeStr','Close');page.bundle.addKey('moreOptionsStr','Click to see options');page.bundle.addKey('hiddenStr','This link is hidden from students');page.bundle.addKey('emptyStr','This link has no content');page.bundle.addKey('entryPointChangeConfirmStr','The entry point will be changed to the next available Content');page.bundle.addKey('subheaderColonStr','Subheader {0}');page.bundle.addKey('confirmQuickEnrollStr','You will be given the role: {0}. Proceed?');page.bundle.addKey('enterSearchKeyStr','Enter Search Criteria.');page.bundle.addKey('courseWelcomePageLbTitle','Quick Setup Guide');page.bundle.addKey('expandCollapse.expand.section.nocolon','Expand');page.bundle.addKey('expandCollapse.collapse.section.nocolon','Collapse');page.bundle.addKey('expandCollapse.expand.section.param','Expand {0}');page.bundle.addKey('expandCollapse.collapse.section.param','Collapse {0}');page.bundle.addKey('tool.activity.description','activity updates');page.bundle.addKey('accessDeniedMsg','Access Denied');page.bundle.addKey('breadcrumbs.expand','Click to expand the breadcrumbs');</script>
+  <script type="text/javascript">
+    document.observe("dom:loaded", function()
+    {
+      gradeAssignment.touchUp( false );
+      gradeAssignment.annotationRendererUrl = 'https://annotation-renderer-us-east-1.saas.bbpd.io';
+    });
+    </script>
+  
+  <script type="text/javascript">var courseId ='_133808_1';</script>
+  <script type="text/javascript">
+   var course_id = "_133808_1";
+   var courseTitle = "F20 - Optimering [520171U008]";
+   var confirmDeleteMenuItemMsg = "Are you sure you want to delete this item?";
+   var confirmQuickUnenrollMsg = "Any user data created while quick-enrolled in this course will be deleted. Proceed?";
+   var confirmQuickEnrollMsg = "You will be given the role: Instructor. Proceed?";
+   var inNewWindow = false;
+   var theCourseMenu;
+ </script>
+ 
+  <script type="text/javascript">globalNavigation.init(); Event.observe(window, 'resize', globalNavigation.onResize);</script>
+  <script type="text/javascript">
+    page.bundle.addKey('globalnav.menu.expand','Expand\x20Global\x20Nav');
+    page.bundle.addKey('globalnav.menu.collapse','Collapse\x20Global\x20Nav');
+
+    function insertSkipLinkAfterBodyStart(referenceNode, newNode, linkContent)
+    {
+      referenceNode.parentNode.insertBefore(newNode, referenceNode);
+      newNode.innerHTML = linkContent;
+    }
+    var skipLink = new Element('a',{id:'skip-to-content', href: '#content', tabIndex: '1'});
+    var learnBody = document.body.firstChild;
+    var linkContent = '';
+    this.insertSkipLinkAfterBodyStart(learnBody, skipLink, linkContent);
+  </script>
+  
+  <script type="text/javascript">
+    page.bundle.addKey('quick_links.link.title','Navigate\x20to\x20element\x20\x7B1\x7D\x20of\x20type\x20\x7B2\x7D\x20in\x20\x7B0\x7D\x20frame');
+    page.bundle.addKey('quick_links.lightbox_title','Quick\x20Links');
+    page.bundle.addKey('quick_links.link_title','Open\x20Quick\x20Links');
+    page.bundle.addKey('quick_links.hotkey.shift','Shift');
+    page.bundle.addKey('quick_links.hotkey.control','Ctrl');
+    page.bundle.addKey('quick_links.hotkey.alt','Alt');
+    page.bundle.addKey('quick_links.hotkey.combination_divider','\x2B');
+  </script>
+  
+  <script type="text/javascript">quickLinks.initialize( [ 'null' ] );</script>
+  <script type="text/javascript">
+  		            globalNavMenu.init( true );
+  		          </script>
+  		        
+  <script type="text/javascript"> social.Profile.MY_PROFILE_TOOL_ID='BB-CORE_____myProfile'; social.Profile.MY_PROFILE_TOOL_URI='/webapps/bb-social-learning-BBLEARN/execute/mybb?cmd=display&toolId=BB-CORE_____myProfile&location='; </script>
+ 
+   <script type="text/javascript">
+   FastInit.addOnLoad( function()
+   {
+            if ( window.DWREngine )
+       {
+        try {DWREngine.beginBatch();} catch(ignore) {}
+       } 
+                page.decoratePageBanner();
+                                                             attemptInlineGrader = new attemptGrading.inlineGrader( 'currentAttempt', '', '', '', 'false' );
+                                                             attemptListInlineGrader = new inlineGraderList.keyboardAccessible( 'currentAttempt_attemptListButton', 'currentAttempt_attemptList' );
+                                                             page.util.initPinBottomSubmitStep();
+                                                             page.ContextMenu.hideMenuDiv('0b917115474e42ae85488630444deac3');
+                                                             new page.PageHelpToggler(true, 'Help is On: Click to hide page help.', 'Help is Off: Click to show page help.', false );
+                                                             breadcrumbs.rightMostNavItem = '';
+                                                             breadcrumbs.rightMostParentURL = '/webapps/blackboard/content/listContent.jsp?course_id=_133808_1&content_id=_2411746_1&mode=reset';
+                                                             new page.PageMenuToggler(true,'courseMenuToggle_133808_1', true);
+                                                             courseMenu.nonceKey = 'blackboard.platform.security.NonceUtil.nonce.ajax';
+                                                             courseMenu.nonceValue = '3f8fa246-14d6-4981-ab55-bfa72e5657df';
+                                                             new page.PaletteController('courseMenuPalette', 'courseMenu_link', false, false);
+                                                             new page.ItemExpander('mygroups._142037_1_groupExpanderLink', 'mygroups._142037_1_groupContents', 'Expand', 'Collapse', true, '/webapps/bb-group-mgmt-LEARN/execute/group/getGroupMenuItems', 'course_id=_133808_1&group_id=_142037_1&newWindow=false&openInParentWindow=false', 'Expand Class DA1','Collapse Class DA1');
+                                                             new page.ItemExpander('mygroups._142051_1_groupExpanderLink', 'mygroups._142051_1_groupContents', 'Expand', 'Collapse', true, '/webapps/bb-group-mgmt-LEARN/execute/group/getGroupMenuItems', 'course_id=_133808_1&group_id=_142051_1&newWindow=false&openInParentWindow=false', 'Expand Group 10','Collapse Group 10');
+                                                             new page.PaletteController('myGroups', 'myGroups_link', false, false);
+                                                             theCourseMenu = new courseMenu.CourseMenu('/webapps/blackboard/execute/doCourseMenuAction', '/webapps/blackboard/execute/getCourseMenuContextMenu');
+                                                             welcomeOverlay.initOverlay();
+                                                             tool_service.init ('300000', 'Suppress-Session-Timestamp-Update' );
+                                                             if (typeof(initEditors) == 'function') { initEditors(); }; 
+                                                             if (window['org'] && window['org']['owasp']) { org.owasp.esapi.ESAPI.initialize(); }; 
+                                                             AllyIntegration.initJWT('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJBTExZIiwic3ViIjoiQUxMWV9UT0tFTiIsImZpbGVJZHMiOltdLCJjb3Vyc2VSb2xlIjoidW5wcml2aWxlZ2VkIiwiaXNzIjoiSFRra3V3cExDbzMwamZZWFU0TWRHMjVJR2hvU3l2N1UiLCJleHAiOjE1OTYwODUxNzQsImlhdCI6MTU5NjA4NDg3NCwiY291cnNlSWQiOiJfMTMzODA4XzEiLCJ1c2VySWQiOiJfMjg5MDYwXzEifQ.jk-EChN879xA9Jd4f31LAjUkvo1aHtTbNpp-XqXn2u0');
+                                                             AllyIntegration.initAllyJSConfigs('prod-eu-central-1.ally.ac','25');
+                                                             jQuery.getScript('//' + window.ALLY_CFG.baseUrl + '/integration/learn/ally.js');
+                                                             quickLinks.createHelper();
+                                                                  if ( window.DWREngine )
+       {
+         try {DWREngine.endBatch();} catch(ignore) {}
+       }
+                          BrowserSpecific.registerListeners();
+                gradeAssignment.init('currentAttempt', '{"fileName":"Jack Optimizations (indi) Revised Assignment 1.pdf","viewUuid":"--bav--616024908088","file_id":"_2127451_1","editMode":"false","viewUrl":"https://bbannotate-eu.foundations.blackboard.com/ui/pdf-viewer/0.0.134-d4d8391/index.html?env=prod-eu-central-1&ticket=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ0ZW5hbnRfaWQiOiI5MTBhNjYyOS1hYTBiLTRjNGYtYjU2My02NDk2MTBlNzAxNTYiLCJmZWF0dXJlcyI6W10sInVzZXJfaWQiOiJfMjg5MDYwXzEiLCJwZXJtaXNzaW9ucyI6WyJyZWFkLWRvY3VtZW50IiwiZG93bmxvYWQiLCJleHA6YW5ub3RhdGlvbnM6dmlldzphbGwiLCJleHA6Y29tbWVudHM6dmlldzphbGwiXSwiZG9jdW1lbnRfaWQiOiI2MTYwMjQ5MDgwODgiLCJleHAiOjE1OTYwODQ5OTR9.k7hRBOKJaGQRBHiFk-wzi-roD7TWnUMePB9Gp7PcLo6VTk6rv6YOeTvotffq5TeZ7Ex0_Q1fNouTuV1oGlBQdZRW1Ge-bQ-SnGYXL9NiP2s3NfTMk0yjUa7Aun5T3_6MRtP5KS_O7sQ6lueC_dspQXCNdu1romId9mXFMQjJ6zHDsgC_VNgplYWqUlzgNx5C57SeISArwTtDFGTP44qigtask2gVYtscOgGGrv_9PS-Sw22NgPPjV_GNUC-eMW4Hlv2Hn_ZrXDqkeHs3HeKgYvaD5fqyyDQBgzHxARGXtIH1BmgbMeFEMtn6LknoB6pYRuR4L3GTtrlVzVinfPKg3Jt3kSOc589Y3RFJBXdYZUpgWTgeFlvClZpYhyZEz1Dcj4NFIVWc1hxXEsM7kK4o5bweI76HWYElibxLqbBSm9jnYU8i2q32nrIpBHG5TgG_ok0ROyiY8a4esE2-u1AgD8SLuBIURoffMJl8-rOayXnRh1zKMm0tUOL7LWmTRa84F-wHmYjkMMalKyVPZT9x0Sy6q1afDKn_ohEzEC7LKN6cMyJrajWbg1osmTaeaQ7-fF9hOgyHZNPqk5Hc34MxnHRKeEs6qoUXWdvXyev_xf2U47LhNunXsPPsu1Yt0aiA2FcY6SnPN38hUzUmY3Vk5bsmb3B5yTB6xqr5clmpEwY&instant=true&locale=en_GB&status=complete","downloadUrl":"/webapps/assignment/download?course_id=_133808_1&attempt_id=_1315841_1&file_id=_2127451_1&fileName=Jack%20Optimizations%20%28indi%29%20Revised%20Assignment%201.pdf","canDownloadWithAnnotation":"false","status":"CONVERTED"}');
+               });
+   </script>
+       
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"e99ceaa32b","agent":"","beacon":"bam.nr-data.net","applicationTime":745,"applicationID":"27090811","transactionName":"YlUEYhdYCkUAWhdfX1sfNUYXUApRIlYNQkJaXApTFxYxRg1WAlJxRkMPUQtUAVgVegxYREdfCloAS0tDD0oTU1NcVg9TAQ==","queueTime":0}</script>
+
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ally-helper-hidden-accessible"></div></body></html>
